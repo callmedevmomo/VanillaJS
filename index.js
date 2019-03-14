@@ -84,7 +84,7 @@ const calculator = {
   multiply: function(a, b) {
     return a * b;
   },
-  power: function(a, b) {
+  squareroot: function(a, b) {
     return a ** b;
   }
 };
@@ -94,12 +94,12 @@ const minus = calculator.minus(5, 5);
 console.log(minus);
 const divide = calculator.divide(20, 4);
 const multiply = calculator.multiply(4, 5);
-const power = calculator.power(2, 5);
+const squareroot = calculator.squareroot(2, 5);
 // lazy developer..
 
-console.log(calculator.power(2, 4));
+console.log(calculator.squareroot(2, 4));
 console.log(calculator.divide(12, 3));
 
 console.log(
-  `plus:${plus}\nminus:${minus}\ndivide:${divide}\nmultiply:${multiply}\npower:${power}`
+  `plus:${plus}\nminus:${minus}\ndivide:${divide}\nmultiply:${multiply}\nsquareroot:${squareroot}`
 );
