@@ -56,3 +56,50 @@ function sayHello(potato, age) {
 sayHello("momo!", 27);
 
 console.log("Hi!");
+
+function sayHello2(name, age) {
+  console.log(`Hello ${name} you are ${age} years old`);
+}
+
+sayHello2("momo!", 27);
+
+function sayHello3(name, age) {
+  return `Hello ${name} you are ${age} years old`;
+}
+// greetMomo is return values
+const greetMomo = sayHello3("momo!", 27);
+
+console.log(greetMomo);
+
+const calculator = {
+  plus: function(a, b) {
+    return a + b;
+  },
+  minus: function(a, b) {
+    return a - b;
+  },
+  divide: function(a, b) {
+    return a / b;
+  },
+  multiply: function(a, b) {
+    return a * b;
+  },
+  power: function(a, b) {
+    return a ** b;
+  }
+};
+const plus = calculator.plus(5, 5);
+console.log(plus);
+const minus = calculator.minus(5, 5);
+console.log(minus);
+const divide = calculator.divide(20, 4);
+const multiply = calculator.multiply(4, 5);
+const power = calculator.power(2, 5);
+// lazy developer..
+
+console.log(calculator.power(2, 4));
+console.log(calculator.divide(12, 3));
+
+console.log(
+  `plus:${plus}\nminus:${minus}\ndivide:${divide}\nmultiply:${multiply}\npower:${power}`
+);
