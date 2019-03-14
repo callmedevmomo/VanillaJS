@@ -103,3 +103,13 @@ console.log(calculator.divide(12, 3));
 console.log(
   `plus:${plus}\nminus:${minus}\ndivide:${divide}\nmultiply:${multiply}\nsquareroot:${squareroot}`
 );
+
+// const title = document.getElementById("title");
+const title = document.querySelector("#title");
+
+console.log(title);
+
+title.innerHTML = "Hi! From JS!";
+title.style.color = "red";
+document.title = "I own you now!";
+console.dir(document);
