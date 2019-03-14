@@ -107,9 +107,18 @@ console.log(
 // const title = document.getElementById("title");
 const title = document.querySelector("#title");
 
-console.log(title);
+// console.log(title);
+//
+// title.innerHTML = "Hi! From JS!";
+// title.style.color = "red";
+// document.title = "I own you now!";
+// console.dir(document);
 
-title.innerHTML = "Hi! From JS!";
-title.style.color = "red";
-document.title = "I own you now!";
-console.dir(document);
+function handleClick() {
+  title.style.color = "red";
+
+  // console.log("I have been resized");
+}
+// window.addEventListener("resize", handleResize());
+
+title.addEventListener("click", handleClick);
