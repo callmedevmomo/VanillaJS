@@ -114,11 +114,47 @@ const title = document.querySelector("#title");
 // document.title = "I own you now!";
 // console.dir(document);
 
-function handleClick() {
-  title.style.color = "red";
+const BASE_COLOR = "rgb(52,73,94)";
+const OTHER_COLOR = "#7f8c8d";
 
-  // console.log("I have been resized");
+function handleClick() {
+  const currentColor = title.style.color;
+  console.log(currentColor);
+  if (currentColor === BASE_COLOR) {
+    title.style.color = OTHER_COLOR;
+  } else {
+    title.style.color = BASE_COLOR;
+  }
 }
+function init() {
+  title.style.color = BASE_COLOR;
+  title.addEventListener("click", handleClick);
+}
+init();
+// console.log("I have been resized");
+
 // window.addEventListener("resize", handleResize());
 
-title.addEventListener("click", handleClick);
+// if ("10" === 10) {
+//   console.log("hi");
+// } else if ("lalala" === "lalala") {
+//   console.log("lalalalala");
+// } else {
+//   console.log("ho");
+// }
+//
+// if (20 > 5 || "moo" === "momo") {
+//   console.log("yes");
+// } else {
+//   console.log("no");
+// }
+//
+// const age = prompt("How old are you?");
+// // console.log(age);
+// if (age >= 18 && age <= 21) {
+//   console.log("You can drink! but you should not");
+// } else if (age > 21) {
+//   console.log("Go ahead!");
+// } else {
+//   alert("too young!");
+// }
