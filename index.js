@@ -44,3 +44,15 @@ momoInfo2.city = "Busan";
 
 console.log(momoInfo2.city);
 console.log(momoInfo2.favFood[0].fatty);
+
+console.log("greetings momo");
+console.log("Hello suna");
+console.log("Hello pabro");
+console.log("Hello aero");
+
+function sayHello(potato, age) {
+  console.log("Hello!", potato, " you have ", age, "years of age.");
+}
+sayHello("momo!", 27);
+
+console.log("Hi!");
